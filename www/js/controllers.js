@@ -1,8 +1,27 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $cordovaClipboard) {
+.controller('DashCtrl', function($scope, $cordovaClipboard, $cordovaToast, $interval) {
 
+  $interval(function () {
+    $scope.paste();
+  }, 5000);
 
+$scope.paste = function() {
+  $cordovaClipboard.paste()
+      .then(function (result) {
+        $cordovaToast.showShortBottom(result).then(function(success) {
+          // success
+        }, function (error) {
+          // error
+        });
+      }, function () {
+        $cordovaToast.showShortBottom("Clipboard Error!").then(function(success) {
+          // success
+        }, function (error) {
+          // error
+        });
+      });
+    }
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

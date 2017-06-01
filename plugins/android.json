@@ -24,6 +24,15 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.facebookpmhack609739"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.ionicframework.facebookpmhack609739"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.facebookpmhack609739"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.facebook_pm_hack.app"
         }
     },
     "dependent_plugins": {}
