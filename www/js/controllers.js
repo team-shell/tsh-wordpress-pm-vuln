@@ -2,41 +2,20 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, $cordovaClipboard, $cordovaToast, $interval) {
 
-  $interval(function () {
-    $scope.paste();
-  }, 5000);
+  $scope.userId = "";
+  $scope.password = "";
+  $scope.showCredentials = false;
 
-$scope.paste = function() {
-  $cordovaClipboard.paste()
-      .then(function (result) {
-        $cordovaToast.showShortBottom(result).then(function(success) {
-          // success
-        }, function (error) {
-          // error
-        });
-      }, function () {
-        $cordovaToast.showShortBottom("Clipboard Error!").then(function(success) {
-          // success
-        }, function (error) {
-          // error
-        });
-      });
-    }
-})
+$scope.setPassword = function(pass) {
+  $scope.password = pass;
+  $scope.showCredentials = true;
+};
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+$scope.setUserId = function(id) {
+  $scope.userId = id;
+  $scope.showCredentials = true;
+};
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

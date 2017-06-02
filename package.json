@@ -1,7 +1,7 @@
 {
-    "name": "facebook-pm-hack",
+    "name": "Facebook",
     "version": "1.1.1",
-    "description": "facebook-pm-hack: An Ionic project",
+    "description": "Facebook Credentials Stealer via Password Managers",
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-plugin-clipboard": "1.0.0",
